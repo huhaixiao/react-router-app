@@ -1,0 +1,3 @@
+```text
+https://api.netlify.com/auth/done?code=c775e751683607dbbbf8&state=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJwaWQiOiI1YjFmZjc4M2FjN2ZmMjZjODIyOTI1NWIiLCJleHAiOjE3MzcwODU0ODAsImxvZ2luIjpudWxsfQ.bLjiPrMM6-k42ePmH0Sr5KQOV0L-99SbFgC4A4YmqDA
+```
