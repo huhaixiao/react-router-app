@@ -1,21 +1,18 @@
-import { useLoaderData } from "react-router";
 import { sleep } from "~/utils";
+import type { Route } from './+types/$';
 
 export async function clientLoader() {
-    await sleep(1);
+    await sleep(3000);
     return {
         message: 'hello world'
     }
 }
 
-export default function ({ params }: { params: { '*': string } }) {
+export default function ({ params, loaderData }: Route.ComponentProps) {
     const path = params['*'];
-    const data = useLoaderData<{ message: string }>();
-    console.log({
-        type: 'hhx.data',
-        data
-    })
     return <div>
-        This is $, a Splat Route, U are visiting {path} {data.message}
+        <div>Splate Route $.tsx, 404 页面</div>
+        <div>Path: {path}</div>
+        <div>Data.message: {loaderData.message}</div>
     </div>
 }
